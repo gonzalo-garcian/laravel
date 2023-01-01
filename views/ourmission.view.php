@@ -12,9 +12,5 @@
       <p>Now you are on the Our Mission page.</p>
     </div>
   </main>
-</div>
 
-	
-</body>
-
-</html>
+<?php require "partials/footer.view.php"; ?>

@@ -12,9 +12,5 @@
       <p>Now you are on the Contact page.</p>
     </div>
   </main>
-</div>
 
-	
-</body>
-
-</html>
+<?php require "partials/footer.view.php"; ?>
