@@ -1,5 +1,5 @@
 <?php
 
-	require "ourmission.view.php";
+	require "views/ourmission.view.php";
 
 ?>
