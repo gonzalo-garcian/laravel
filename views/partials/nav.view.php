@@ -9,13 +9,13 @@
           <div class="hidden md:block">
             <div class="ml-10 flex items-baseline space-x-4">
               <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/laravel" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
+              <a href="/laravel" class=" <?= urlIs('/laravel/') ? 'bg-gray-900 text-white':'text-gray-300'?>  px-3 py-2 rounded-md text-sm font-medium" aria-current="page">Home</a>
 
-              <a href="/laravel/about.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
+              <a href="/laravel/about.php" class="<?= urlIs('/laravel/about.php') ? 'bg-gray-900 text-white':'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About</a>
 
-              <a href="/laravel/contact.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
+              <a href="/laravel/contact.php" class="<?= urlIs('/laravel/contact.php') ? 'bg-gray-900 text-white':'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Contact</a>
 
-              <a href="/laravel/ourmission.php" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Mission</a>
+              <a href="/laravel/ourmission.php" class="<?= urlIs('/laravel/ourmission.php') ? 'bg-gray-900 text-white':'text-gray-300' ?> hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Our Mission</a>
             </div>
           </div>
         </div>
