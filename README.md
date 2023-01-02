@@ -4,7 +4,7 @@ Repository which I use to keep the history of everything I have done with PHP an
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/gonzalo-garcian)
+- [@gonzalo-garcian](https://www.github.com/gonzalo-garcian)
 
 
 ## Contributing
