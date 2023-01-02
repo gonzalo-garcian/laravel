@@ -4,7 +4,7 @@ Repository which I use to keep the history of everything I have done with PHP an
 
 ## Authors
 
-- [@octokatherine](https://www.github.com/octokatherine)
+- [@octokatherine](https://www.github.com/gonzalo-garcian)
 
 
 ## Contributing
@@ -17,6 +17,3 @@ Please adhere to this project's `code of conduct`.
 
 
 ## Documentation
-
-[Documentation](https://linktodocumentation)
-
