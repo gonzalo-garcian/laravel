@@ -1,23 +1,17 @@
 <?php
 
+require('router.php');
 
-$routes = [
-	'/laravel/' => 'controllers/index.php',
-	'/laravel/about' => 'controllers/about.php',
-	'/laravel/contact' => 'controllers/contact.php',
-	'/laravel/ourmission' => 'controllers/ourmission.php',
-];
+$dsn = "mysql:host=localhost;port=3306;dbname=gundam;user=root;charset=utf8mb4";
 
-$route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$pdo = new PDO($dsn);
 
-if(array_key_exists($route, $routes)){
+$statement = $pdo->prepare("select * from gunpla");
 
-	require $routes[$route];
+$statement->execute();
 
-}
-else{
+$posts = $statement->fetchAll(PDO::FETCH_ASSOC);
 
-	require('controllers/404.php');
-}
+dd($posts);
 
 ?>
