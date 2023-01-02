@@ -4,7 +4,7 @@ require('router.php');
 require('Database.php');
 
 
-$db = new Database();
+$db = new Database(require('config.php'));
 $posts = $db -> query('select * from gunpla');
 
 
