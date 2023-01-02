@@ -17,7 +17,7 @@ if(array_key_exists($route, $routes)){
 }
 else{
 
-	require 'controllers/404.php';
+	require('controllers/404.php');
 }
 
 ?>
