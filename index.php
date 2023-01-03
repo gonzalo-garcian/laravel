@@ -5,7 +5,7 @@ require('Database.php');
 
 
 $db = new Database(require('config.php'));
-$posts = $db -> query('select * from gunpla');
+$posts = $db -> query('select * from gunpla') -> fetchAll();
 
 
 foreach($posts as $post){
