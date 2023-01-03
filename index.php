@@ -5,7 +5,7 @@ require('Database.php');
 
 
 $db = new Database(require('config.php'));
-$posts = $db -> query('SELECT * FROM gunpla WHERE id = ?', [$_GET['id']]) -> fetchAll();
+$posts = $db -> query('SELECT * FROM gunpla WHERE id = :id', [':id' => $_GET['id']]) -> fetchAll();
 
 
 foreach($posts as $post){
