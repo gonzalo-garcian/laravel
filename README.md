@@ -20,3 +20,5 @@ Please adhere to this project's `code of conduct`.
 
 ### Notes 
 
+MySQL
+PHP
