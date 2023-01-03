@@ -6,6 +6,7 @@ $routes = [
 	'/laravel/about' => 'controllers/about.php',
 	'/laravel/contact' => 'controllers/contact.php',
 	'/laravel/ourmission' => 'controllers/ourmission.php',
+    '/laravel/notes' => 'controllers/notes.php',
 ];
 
 $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
