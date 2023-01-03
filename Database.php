@@ -8,7 +8,9 @@ class Database{
 
         $dsn = "mysql:" . http_build_query($config, '', ';');
 
-        $this->connection = new PDO($dsn, $username, $password);
+        $this->connection = new PDO($dsn, $username, $password, [
+
+        ]);
 
     }
 
