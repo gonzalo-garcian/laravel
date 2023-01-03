@@ -17,3 +17,7 @@ Please adhere to this project's `code of conduct`.
 
 
 ## Documentation
+
+### Notes 
+
+MySQL, PHP, HTML/CSS, JavaScript
