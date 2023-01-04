@@ -6,17 +6,17 @@ class Card
     private string $pip;
 
     public function __construct($suit, $pip){
-        $this -> $suit = $suit;
-        $this -> $pip  = $pip;
+        $this -> suit = $suit;
+        $this -> pip  = $pip;
     }
 
     public function get_suit() : string
     {
-        return $this -> $suit;
+        return $this -> suit;
     }
 
     public function get_pip() : string
     {
-        return $this -> $pip;
+        return $this -> pip;
     }
 }

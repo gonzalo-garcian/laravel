@@ -1,10 +1,10 @@
 <?php
 
-require_once ('Card.php');
+require_once ('Deck.php');
 
 class Standard52 extends Deck
 {
-    private static array $pips = ['A', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
+    private static array $pips = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'J', 'Q', 'K'];
     private static array $suits = ['♠', '♥', '♣', '♦'];
 
     public function __construct() {
