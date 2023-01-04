@@ -24,6 +24,6 @@ class Deck
             $i++;
         }
         echo '<p>' . $string;
-        echo count($this->cards);
+        echo '<p>' . count($this->cards) . '</p>';
     }
 }
