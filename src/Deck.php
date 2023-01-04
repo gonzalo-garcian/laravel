@@ -1,6 +1,6 @@
 <?php
 
-require_once ('Card.php');
+require_once ('src/Card.php');
 class Deck
 {
     protected array $cards;

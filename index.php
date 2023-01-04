@@ -1,5 +1,5 @@
 <?php
 
 require('functions.php');
-require('Database.php');
+require('src/Database.php');
 require('router.php');

@@ -1,6 +1,6 @@
 <?php
 
-require_once ('Standard52.php');
+require_once ('src/Standard52.php');
 $deck = new Standard52();
 
 $deck->cardsToString();

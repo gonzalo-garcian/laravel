@@ -1,6 +1,6 @@
 <?php
 
-require_once ('Deck.php');
+require_once ('src/Deck.php');
 
 class Standard52 extends Deck
 {
