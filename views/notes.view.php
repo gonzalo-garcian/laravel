@@ -11,9 +11,11 @@
             <ul>
                 <?php
                 foreach ($notes as $note) : ?>
-                    <h2><?= $note['body'] ?></h2>
+                    <li><h2><?= $note['body'] ?></h2></li>
                 <?php endforeach;?>
             </ul>
+
+            <?php $deck->cardsToString(); ?>
         </div>
     </main>
 

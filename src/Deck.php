@@ -12,7 +12,7 @@ class Deck
 
     public function cardsToString(){
         foreach ($this->cards as $card){
-            echo  '<li>' . $card->get_suit() . '/' . $card->get_pip() . '</li>';
+            echo  '<p>' . $card->get_suit() . '/' . $card->get_pip() . '</p>';
         }
         echo count($this->cards);
     }
