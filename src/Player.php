@@ -8,4 +8,8 @@ class Player
         return $this -> hand;
     }
 
+    public function addCardHand($element){
+        $this -> hand[] = $element;
+    }
+
 }

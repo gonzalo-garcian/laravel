@@ -33,19 +33,23 @@ class Regicide extends Deck
             $this -> castle[] = $phase;
         }
 
+        $player = new Player();
+        $this->drawHand($player, 1);
 
-        dd($this->castle);
+        dd($player->getHand());
 
     }
 
-    public function getHand($player, $nPlayers){
+    public function drawHand($player, $nPlayers){
         $handsNumberPlayers = [
             1 => 8
         ];
 
         if(array_key_exists($nPlayers, $handsNumberPlayers)) {
             for ($i = 0; $i < $handsNumberPlayers[$nPlayers]; $i++) {
-                $player->hand[] = array_pop($this->cards);
+                $poped = array_pop($this->cards);
+                echo var_dump($poped);
+                $player->getHand()[] = $poped;
             }
         }
 
