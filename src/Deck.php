@@ -3,7 +3,7 @@
 require_once ('src/Card.php');
 class Deck
 {
-    protected array $cards;
+    protected array $cards = [];
 
     public function getCards(): array
     {

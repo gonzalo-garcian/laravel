@@ -9,7 +9,7 @@ class Regicide extends Deck
 
     private static array $castlePips = ['J', 'Q', 'K'];
 
-    private array $castle;
+    private array $castle = [];
 
     public function __construct() {
 
@@ -20,7 +20,7 @@ class Regicide extends Deck
             }
         }
         //Shuffle the cards array so the tavern pile is not always the same.
-        shuffle($this->cards[]);
+        shuffle($this->cards);
 
         foreach (Regicide::$castlePips as $castlePip){
             $phase = [];
@@ -31,6 +31,8 @@ class Regicide extends Deck
             shuffle($phase);
             $this -> castle[] = $phase;
         }
+
+        dd($this->castle);
 
     }
 }
