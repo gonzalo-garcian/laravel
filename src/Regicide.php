@@ -12,6 +12,8 @@ class Regicide extends Deck
     private array $castle;
 
     public function __construct() {
+
+        //Add enemy as a Card to the castle pile but only the [A-10] playable cards.
         foreach (Regicide::$pips as $pip){
             foreach (Regicide::$suits as $suit){
                 $this -> cards[] = new Card($suit, $pip);
@@ -19,9 +21,14 @@ class Regicide extends Deck
         }
 
         foreach (Regicide::$castlePips as $castlePip){
+            $phase = [];
             foreach (Regicide::$suits as $suit){
-                $this -> castle[] = new Card($suit, $castlePip);
+                $phase[] = new Card($suit, $castlePip);
             }
+            //Shuffle the enemy suit group so the order is not always the same.
+            shuffle($phase);
+            $this -> castle[] = $phase;
         }
+
     }
 }
