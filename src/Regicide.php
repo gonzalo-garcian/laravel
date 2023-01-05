@@ -36,10 +36,14 @@ class Regicide extends Deck
 
     }
 
-    public function getHand($nPlayers){
+    public function getHand($player, $nPlayers){
         $handsNumberPlayers = [
             1 => 8
         ];
+
+        for ($i = 0; $i < $handsNumberPlayers[$nPlayers]; $i++){
+            $player -> hand[] = array_pop($this->cards);
+        }
 
     }
 }
