@@ -47,9 +47,7 @@ class Regicide extends Deck
 
         if(array_key_exists($nPlayers, $handsNumberPlayers)) {
             for ($i = 0; $i < $handsNumberPlayers[$nPlayers]; $i++) {
-                $poped = array_pop($this->cards);
-                echo var_dump($poped);
-                $player->getHand()[] = $poped;
+                $player-> addCardHand(array_pop($this->cards));
             }
         }
 
