@@ -19,6 +19,8 @@ class Regicide extends Deck
                 $this -> cards[] = new Card($suit, $pip);
             }
         }
+        //Shuffle the cards array so the tavern pile is not always the same.
+        shuffle($this->cards[]);
 
         foreach (Regicide::$castlePips as $castlePip){
             $phase = [];
