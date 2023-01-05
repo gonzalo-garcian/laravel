@@ -35,4 +35,11 @@ class Regicide extends Deck
         dd($this->castle);
 
     }
+
+    public function getHand($nPlayers){
+        $handsNumberPlayers = [
+            1 => 8
+        ];
+
+    }
 }
