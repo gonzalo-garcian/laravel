@@ -1,6 +1,7 @@
 <?php
 
 require_once ('src/Deck.php');
+require_once ('src/Player.php');
 
 class Regicide extends Deck
 {
@@ -31,6 +32,7 @@ class Regicide extends Deck
             shuffle($phase);
             $this -> castle[] = $phase;
         }
+
 
         dd($this->castle);
 
