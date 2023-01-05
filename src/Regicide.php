@@ -9,12 +9,18 @@ class Regicide extends Deck
 
     private static array $castlePips = ['J', 'Q', 'K'];
 
-    private static array $castle;
+    private array $castle;
 
     public function __construct() {
         foreach (Regicide::$pips as $pip){
             foreach (Regicide::$suits as $suit){
                 $this -> cards[] = new Card($suit, $pip);
+            }
+        }
+
+        foreach (Regicide::$castlePips as $castlePip){
+            foreach (Regicide::$suits as $suit){
+                $this -> castle[] = new Card($suit, $castlePip);
             }
         }
     }
