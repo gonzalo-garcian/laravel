@@ -7,6 +7,8 @@ class Enemy {
 
     public function __construct($life, $attack, $pip){
 
+        $this->$life = $life;
+
     }
 }
 
