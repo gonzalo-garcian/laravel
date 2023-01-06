@@ -12,6 +12,10 @@ class Enemy {
         $this->$life = $life;
         $this->$attack = $attack;
     }
+
+    public function getLife() {
+        return $this->life;
+    }
 }
 
 class Regicide extends Deck
