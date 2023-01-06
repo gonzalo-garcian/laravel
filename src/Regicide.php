@@ -5,13 +5,13 @@ require_once ('src/Player.php');
 
 class Enemy {
 
-    private int $life;
+    private int $healthPoints;
     private int $attack;
 
     private int $pip;
-    public function __construct($life, $attack, $pip){
+    public function __construct($healthPoints, $attack, $pip){
 
-        $this->$life = $life;
+        $this->$healthPoints = $healthPoints;
         $this->$attack = $attack;
         $this->$pip = $pip;
     }
@@ -19,8 +19,8 @@ class Enemy {
     /**
      * @return int
      */
-    public function getLife() {
-        return $this->life;
+    public function gethealthPoints() {
+        return $this->healthPoints;
     }
 
     /**
@@ -37,7 +37,7 @@ class Regicide extends Deck
     private static array $pips = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
     private static array $suits = ['♠', '♥', '♣', '♦'];
 
-    private static array $castlePips = ['J', 'Q', 'K'];
+    private static array $castlePips = ['J' => ['attack' => 10, 'healthPoints' => 20], 'Q', 'K'];
 
     private array $castle = [];
 
