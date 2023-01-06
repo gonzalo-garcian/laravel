@@ -53,6 +53,6 @@ class Regicide extends Deck
     }
 
     public function getCastle() {
-        return 0;
+        return $this->castle;
     }
 }
