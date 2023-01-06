@@ -5,6 +5,9 @@ require_once ('src/Player.php');
 
 class Enemy {
 
+    public function __construct($life, $attack, $pip){
+
+    }
 }
 
 class Regicide extends Deck
