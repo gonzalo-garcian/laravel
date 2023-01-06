@@ -5,10 +5,12 @@ require_once ('src/Player.php');
 
 class Enemy {
 
+    private int $life;
+    private int $attack;
     public function __construct($life, $attack, $pip){
 
         $this->$life = $life;
-
+        $this->$attack = $attack;
     }
 }
 
