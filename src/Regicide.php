@@ -50,6 +50,9 @@ class Regicide extends Deck
                 $player-> addCardHand(array_pop($this->cards));
             }
         }
+    }
 
+    public function getCastle() {
+        return 0;
     }
 }
