@@ -13,6 +13,9 @@ class Enemy {
         $this->$attack = $attack;
     }
 
+    /**
+     * @return int
+     */
     public function getLife() {
         return $this->life;
     }
