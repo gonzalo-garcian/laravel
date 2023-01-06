@@ -37,7 +37,11 @@ class Regicide extends Deck
     private static array $pips = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
     private static array $suits = ['♠', '♥', '♣', '♦'];
 
-    private static array $castlePips = ['J' => ['attack' => 10, 'healthPoints' => 20], 'Q', 'K'];
+    private static array $castlePips = [
+        'J' => ['attack' => 10, 'healthPoints' => 20],
+        'Q' => ['attack' => 15, 'healthPoints' => 30],
+        'K' => ['attack' => 20, 'healthPoints' => 40]
+    ];
 
     private array $castle = [];
 
