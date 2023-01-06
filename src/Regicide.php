@@ -3,6 +3,10 @@
 require_once ('src/Deck.php');
 require_once ('src/Player.php');
 
+class Enemy {
+
+}
+
 class Regicide extends Deck
 {
     private static array $pips = ['A', '2', '3', '4', '5', '6', '7', '8', '9', '10'];
