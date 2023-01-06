@@ -7,10 +7,13 @@ class Enemy {
 
     private int $life;
     private int $attack;
+
+    private int $pip;
     public function __construct($life, $attack, $pip){
 
         $this->$life = $life;
         $this->$attack = $attack;
+        $this->$pip = $pip;
     }
 
     /**
