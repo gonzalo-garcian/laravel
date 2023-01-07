@@ -9,7 +9,7 @@ class Enemy {
     private int $attack;
 
     private int $pip;
-    public function __construct($healthPoints, $attack, $pip, $suit){
+    public function __construct(int $healthPoints, int $attack, string $pip, string $suit){
 
         $this->$healthPoints = $healthPoints;
         $this->$attack = $attack;
