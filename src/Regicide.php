@@ -60,7 +60,7 @@ class Regicide extends Deck
         foreach (Regicide::$castlePips as $castlePip){
             $phase = [];
             foreach (Regicide::$suits as $suit){
-                $phase[] = new Enemy($suit, $castlePip);
+                $phase[] = new Enemy($castlePip['healthPoints'], $castlePip['attack'],$suit, key($castlePip));
             }
             //Shuffle the enemy suit group so the order is not always the same.
             shuffle($phase);
