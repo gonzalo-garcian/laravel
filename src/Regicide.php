@@ -9,11 +9,12 @@ class Enemy {
     private int $attack;
 
     private int $pip;
-    public function __construct($healthPoints, $attack, $pip){
+    public function __construct($healthPoints, $attack, $pip, $suit){
 
         $this->$healthPoints = $healthPoints;
         $this->$attack = $attack;
         $this->$pip = $pip;
+        $this->$suit = $suit;
     }
 
     /**
@@ -59,7 +60,7 @@ class Regicide extends Deck
         foreach (Regicide::$castlePips as $castlePip){
             $phase = [];
             foreach (Regicide::$suits as $suit){
-                $phase[] = new Card($suit, $castlePip);
+                $phase[] = new Enemy($suit, $castlePip);
             }
             //Shuffle the enemy suit group so the order is not always the same.
             shuffle($phase);
