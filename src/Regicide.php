@@ -69,8 +69,10 @@ class Regicide extends Deck
     ];
 
     private array $castle = [];
+    private int $nPlayers = 1;
 
-    public function __construct() {
+    public function __construct($nPlayers) {
+        $this->nPlayers = $nPlayers;
 
         //Add enemy as a Card to the castle pile but only the [A-10] playable cards.
         foreach (Regicide::$pips as $pip){
@@ -104,8 +106,8 @@ class Regicide extends Deck
             1 => 8
         ];
 
-        if(array_key_exists($nPlayers, $handsNumberPlayers)) {
-            for ($i = 0; $i < $handsNumberPlayers[$nPlayers]; $i++) {
+        if(array_key_exists($this->nPlayers, $handsNumberPlayers)) {
+            for ($i = 0; $i < $handsNumberPlayers[$this->nPlayers]; $i++) {
                 $player-> addCardHand(array_pop($this->cards));
             }
         }
