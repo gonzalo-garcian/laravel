@@ -108,13 +108,13 @@ class Regicide extends Deck
 
         if(array_key_exists($this->nPlayers, $handsNumberPlayers)) {
             for ($i = 0; $i < $handsNumberPlayers[$this->nPlayers]; $i++) {
-                $player-> addCardHand(array_pop($this->cards));
+                $player->addCardHand(array_pop($this->cards));
             }
         }
     }
 
     public function mulligan($player){
-        return true;
+        $player->hand;
     }
 
     public function getCastle() {
