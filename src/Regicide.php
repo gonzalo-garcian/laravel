@@ -28,6 +28,13 @@ class Enemy {
     /**
      * @return int
      */
+    public function sethealthPoints($newHealthPoints) {
+        $this->healthPoints = $newHealthPoints;
+    }
+
+    /**
+     * @return int
+     */
     public function getAttack(): int
     {
         return $this->attack;
@@ -85,6 +92,7 @@ class Regicide extends Deck
         $player = new Player();
         $this->drawHand($player, 1);
         $actualEnemy = array_pop($this->castle);
+
         dd($player->getHand());
 
     }
