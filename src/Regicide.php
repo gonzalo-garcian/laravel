@@ -33,11 +33,17 @@ class Enemy {
         return $this->attack;
     }
 
-    public function getPip(){
+     /**
+     * @return int
+     */
+    public function getPip(): string{
         return $this->pip;
     }
 
-    public function getsuit(){
+     /**
+     * @return int
+     */
+    public function getsuit(): string{
         return $this->suit;
     }
 }
