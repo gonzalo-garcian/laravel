@@ -99,7 +99,7 @@ class Regicide extends Deck
 
     }
 
-    public function drawHand($player, $nPlayers){
+    public function drawHand($player){
         $handsNumberPlayers = [
             1 => 8
         ];
@@ -111,7 +111,7 @@ class Regicide extends Deck
         }
     }
 
-    public function mulligan(){
+    public function mulligan($player){
         return true;
     }
 
