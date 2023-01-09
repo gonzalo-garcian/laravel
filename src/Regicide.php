@@ -111,6 +111,10 @@ class Regicide extends Deck
         }
     }
 
+    public function mulligan(){
+        return true;
+    }
+
     public function getCastle() {
         return $this->castle;
     }
