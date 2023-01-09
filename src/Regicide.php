@@ -34,7 +34,11 @@ class Enemy {
     }
 
     public function getPip(){
-        return $this->pip
+        return $this->pip;
+    }
+
+    public function getsuit(){
+        return $this->suit;
     }
 }
 
@@ -74,7 +78,7 @@ class Regicide extends Deck
 
         $player = new Player();
         $this->drawHand($player, 1);
-
+        
         dd($player->getHand());
 
     }
