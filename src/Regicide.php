@@ -34,7 +34,7 @@ class Enemy {
     }
 
     public function getPip(){
-        
+        return $this->pip
     }
 }
 
