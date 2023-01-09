@@ -25,9 +25,6 @@ class Enemy {
         return $this->healthPoints;
     }
 
-    /**
-     * @return int
-     */
     public function sethealthPoints($newHealthPoints) {
         $this->healthPoints = $newHealthPoints;
     }
@@ -38,6 +35,11 @@ class Enemy {
     public function getAttack(): int
     {
         return $this->attack;
+    }
+
+    
+    public function setAttack($newAttack) {
+        $this->attack = $newAttack;
     }
 
      /**
