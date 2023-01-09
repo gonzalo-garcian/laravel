@@ -7,8 +7,9 @@ class Enemy {
 
     private int $healthPoints;
     private int $attack;
+    private string $pip;
+    private string $suit;
 
-    private int $pip;
     public function __construct(int $healthPoints, int $attack, string $pip, string $suit){
 
         $this->$healthPoints = $healthPoints;
@@ -30,6 +31,10 @@ class Enemy {
     public function getAttack(): int
     {
         return $this->attack;
+    }
+
+    public function getPip(){
+        
     }
 }
 
