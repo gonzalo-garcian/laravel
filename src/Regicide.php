@@ -84,7 +84,7 @@ class Regicide extends Deck
 
         $player = new Player();
         $this->drawHand($player, 1);
-        
+        $actualEnemy = array_pop($this->castle);
         dd($player->getHand());
 
     }
