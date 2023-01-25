@@ -14,8 +14,6 @@
                     <li><h2><?= $note['body'] ?></h2></li>
                 <?php endforeach;?>
             </ul>
-
-            <?php $deck->cardsToString(); ?>
         </div>
     </main>
 
