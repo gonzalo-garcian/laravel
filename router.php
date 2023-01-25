@@ -2,11 +2,11 @@
 
 
 $routes = [
-	'/laravel/' => 'controllers/index.php',
-	'/laravel/about' => 'controllers/about.php',
-	'/laravel/contact' => 'controllers/contact.php',
-	'/laravel/ourmission' => 'controllers/ourmission.php',
-    '/laravel/notes' => 'controllers/notes.php',
+	'/' => 'controllers/index.php',
+	'/about' => 'controllers/about.php',
+	'/contact' => 'controllers/contact.php',
+	'/ourmission' => 'controllers/ourmission.php',
+    '/notes' => 'controllers/notes.php',
 ];
 
 $route = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);

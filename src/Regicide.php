@@ -85,8 +85,9 @@ class Regicide extends Deck
 
         foreach (Regicide::$castlePips as $castlePip){
             $phase = [];
+            var_dump(key($castlePip));
             foreach (Regicide::$suits as $suit){
-                $phase[] = new Enemy($castlePip['healthPoints'], $castlePip['attack'],$suit, key($castlePip));
+                $phase[] = new Enemy($castlePip['healthPoints'], $castlePip['attack'],$suit, "strval()");
             }
             //Shuffle the enemy suit group so the order is not always the same.
             shuffle($phase);
@@ -97,7 +98,7 @@ class Regicide extends Deck
         $this->drawHand($player, 1);
         $actualEnemy = array_pop($this->castle);
 
-        dd($player->getHand());
+        dd($this->castle);
 
     }
 
